@@ -1,0 +1,194 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;	
+}
+
+/*NAV*/
+
+nav .brand-img {
+	padding: 10px 15px;
+}
+
+/*PORTFOLIO*/
+
+.porftolio {
+	position: relative;
+}
+[class*="photo"] {
+	height: 100vh;
+}
+.no-padding {
+	padding: 0;	
+}
+.photo-1 {
+	background: url(https://images.pexels.com/photos/253360/pexels-photo-253360.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) center/cover;
+}
+.photo-2 {
+	background: url(https://images.pexels.com/photos/194094/pexels-photo-194094.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) center/cover;
+}
+.photo-3 {
+	background: url(https://3hsyn13u3q9dhgyrg2qh3tin-wpengine.netdna-ssl.com/wp-content/uploads/2015/03/SplitShire-51732-1024x683.jpg) center/cover;
+}
+.photo-4 {
+	background: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/5D8DCD3283.jpg) center/cover;
+}
+.photo-5 {
+	background: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/2038YFGQUT.jpg) center/cover;
+}
+.portfolio .description {
+	background: linear-gradient(90deg, transparent, rgba(0,0,0,.6), transparent);
+	padding: 15px 0;
+	position: absolute;
+	bottom: 45%;
+}
+.portfolio .description p {
+	font-size: 20px;
+}
+
+/*ABOUT-US*/
+
+/*  bhoechie tab */
+div.bhoechie-tab-container{
+	z-index: 10;
+	background-color: #ffffff;
+	padding: 0 !important;
+	background-clip: padding-box;
+	opacity: 0.97;
+	filter: alpha(opacity=97);
+}
+div.bhoechie-tab-menu{
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group{
+	margin-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group>a{
+	margin-bottom: 0;
+	border-left: 0;
+	height: 30vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+div.bhoechie-tab-menu div.list-group>a .glyphicon,
+div.bhoechie-tab-menu div.list-group>a .fa {
+	color: #d35400;
+}
+div.bhoechie-tab-menu div.list-group>a:first-child{
+	border-top-left-radius: 0;
+	-moz-border-top-left-radius: 0;
+	border-top: 0;
+}
+div.bhoechie-tab-menu div.list-group>a:last-child{
+	border-bottom-left-radius: 0;
+	-moz-border-bottom-left-radius: 0;
+	border-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group>a.active,
+div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+div.bhoechie-tab-menu div.list-group>a.active .fa{
+	background-color: #d35400;
+	color: #ffffff;
+}
+div.bhoechie-tab-menu div.list-group>a.active:after{
+	content: '';
+	position: absolute;
+	left: 100%;
+	top: 50%;
+	margin-top: -13px;
+	border-left: 0;
+	border-bottom: 13px solid transparent;
+	border-top: 13px solid transparent;
+	border-left: 10px solid #d35400;
+}
+
+div.bhoechie-tab-content {
+	position: relative;
+}
+div.bhoechie-tab-content center {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	background-color: #d35400;
+	padding: 35px;
+}
+div.bhoechie-tab-content contact h2 {
+	text-align: center;
+	background-color: #d35400;
+	padding: 35px;
+}
+
+div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+ 	display: none;
+}
+.about-us .squad-photo {
+	background: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/PCRS8AQQTF.jpg) center/cover;
+	height: 90vh;	
+}
+.about-us .prf-photo {
+	background: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/3AOFVCPFD7.jpg) center/cover;
+	height: 90vh;	
+}
+.about-us .msg-photo {
+	background-color: #222;
+	height: 90vh;	
+}
+.about-us .cont-center {
+	padding: 3vh 65px 0;
+	color: #fff;
+}
+
+/*FOOTER*/
+
+.bg {
+	background-color: #000;	
+	text-align: center;
+	padding: 15px 0;
+	color: #ccc;
+}
+footer p {
+	margin-bottom: 0;	
+}
+
+/*MEDIA-QUERIES*/
+
+@media (max-width: 969px) {
+	h4.glyphicon {
+		font-size: 2em;
+	}
+}
+@media (max-width: 767px) {
+	.portfolio .description h1 {
+		font-size: 20px;	
+	}
+	.portfolio .description p {
+		font-size: 12px;
+	}
+	.bhoechie-tab-content h2 {
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+	.bhoechie-tab-content contact>h2 {
+		display: none;	
+	}
+	.bhoechie-tab-content h3 {
+		display: none;	
+	}
+	.about-us p {
+		display: none;	
+	}
+	.about-us .cont-center {
+		padding: 5px 10px;
+	}
+	div.bhoechie-tab-content center {
+		padding: 10px;
+	}
+	.about-us .not-show {
+		display: none;	
+	}
+}
